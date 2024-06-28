@@ -1,0 +1,8 @@
+<!-- app.component.html -->
+<div style="display: flex; flex-direction: column; gap: 10px">
+  <span>Still work!</span>
+
+  @for (cmp of cmpsArrObjSorted(); track cmp.name) {
+    <ng-template [ngComponentOutlet]="cmp.cmp" [ngComponentOutletInputs]="cmp.props" />
+  }
+</div>
